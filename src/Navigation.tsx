@@ -4,12 +4,13 @@
  * @example pasteimage/2022-09-25-23-10-12.png
  */
 import React from "react";
-import  {Nav, initializeIcons} from '@fluentui/react'
+import  {initializeIcons} from '@fluentui/react'
+import { Nav, INavStyles, INavLinkGroup } from '@fluentui/react/lib/Nav';
 
 /** Danh sách các item ở menu phải */
-const menuItems = [
+const menuItems : INavLinkGroup[] = [
     {
-    links: [
+        links: [
         {
             name: 'Dashboard',
             url:'/',
@@ -42,7 +43,10 @@ const menuItems = [
     }
 ]
 
-const navigationStyles = {
+/**
+ * Style trình bày của menu phải
+ */
+const navigationStyles : Partial<INavStyles> = {
     root: {
         height:"100vh",
         boxSizing:'border-box',
