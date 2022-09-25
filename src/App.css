@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+/** 
+  style mặc đinh của component FluentUI.Nav 
+  @see pasteimage/2022-09-26-00-48-53.png
+*/
+.ms-Nav {
+  background-color: lightgrey;
+}

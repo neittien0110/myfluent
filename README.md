@@ -27,7 +27,7 @@ yarn add --save typescript @types/node @types/react @types/react-dom @types/jest
 
 *Ghi chú*: có thể phải --force thì mới cài được typescript
 
-- Tạo file *tsconfig.json bằng lệnh
+- Tạo file *tsconfig.json* bằng lệnh
 
 ```dos
     npx -p typescript tsc --init
@@ -37,3 +37,37 @@ yarn add --save typescript @types/node @types/react @types/react-dom @types/jest
 
 - Đổi các file **.js** thành **.tsx** là xong. Bắt đầu chạy Typescript. <br/>
   Navigation được cấu trúc rõ ràng, định kiểu chặt chẽ hơn với Typescript
+
+- Bổ sung Layout ms-Grid với [Fabric-Core](https://developer.microsoft.com/en-us/fluentui#/get-started/web#fabric-core) bằng cách  (Một cách khác là sử dụng component [Stack](https://developer.microsoft.com/en-us/fluentui#/controls/web/stack)
+
+  ![Ảnh kết quả](pasteimage/2022-09-26-00-48-53.png)
+  - Cách 1:
+    - cài đặt và triệu gọi css qua package.
+
+    ```typescript
+        npm install office-ui-fabric-react
+        import 'office-ui-fabric-react/dist/css/fabric.css'
+    ```
+
+    Lưu ý: trong cửa sổ lập trình, mặc dù không reference tới file css này được, nhưng code vẫn chạy thành công
+
+  - Cách 2: hoặc bổ sung css trực tiếp vào html. 
+
+  ```html
+  <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
+  ```
+
+  - Tiếp theo việc viêt code thì giống nhau. [Xem hướng dẫn](https://developer.microsoft.com/en-us/fluentui#/styles/web/layout)
+
+  ```typescript
+     return (
+        <>
+          <div className="ms-Grid" dir="ltr">
+            <div className={"ms-Grid-row"}>
+              <div className={"ms-Grid-col ms-sm1 ms-md2 ms-lg2"}>Vị trí bên trái</div>
+              <div className={"ms-Grid-col ms-sm6 ms-md8 ms-lg10"}>Nội dung chính</div>
+            </div>
+          </div>
+        </>
+      );
+  ```
