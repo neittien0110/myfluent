@@ -57,7 +57,7 @@ yarn add --save typescript @types/node @types/react @types/react-dom @types/jest
   <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
   ```
 
-  - Tiếp theo việc viêt code thì giống nhau. [Xem hướng dẫn](https://developer.microsoft.com/en-us/fluentui#/styles/web/layout)
+  - Tiếp theo việc viết code thì giống nhau. [Xem hướng dẫn](https://developer.microsoft.com/en-us/fluentui#/styles/web/layout)
 
   ```typescript
      return (
@@ -71,3 +71,7 @@ yarn add --save typescript @types/node @types/react @types/react-dom @types/jest
         </>
       );
   ```
+ 
+ - Tạo các card ở nội dung chính. <br/>
+   ![Ảnh kết quả](pasteimage/2022-09-27-15-31-29.png) <br/>
+   *Lưu ý: Đối tượng Card không hỗ trợ với Typescript, nên code phải để ở dạng javascript.*

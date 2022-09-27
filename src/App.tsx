@@ -3,6 +3,7 @@ import './App.css';
 /** Bổ sung Layout ms-Grid bằng cách cài gói npm install office-ui-fabric-react, hoặc bổ sung css trực tiếp vào html */
 import 'office-ui-fabric-react/dist/css/fabric.css'
 import Navigation from './Navigation';
+import { CardsSection } from './CardsSection'
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
             <Navigation />
           </div>
           {/**  Khu vực không bao gồm menu phải */}
-          <div className={"ms-Grid-col ms-sm6 ms-md8 ms-lg10"}>Nội dung chính</div>
+          <div className={"ms-Grid-col ms-sm6 ms-md8 ms-lg10"}>
+             <h1>Card tóm tắt thông tin</h1>
+            <CardsSection/>
+          </div>
         </div>
       </div>
     </>
