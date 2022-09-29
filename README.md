@@ -75,3 +75,7 @@ yarn add --save typescript @types/node @types/react @types/react-dom @types/jest
  - Tạo các card ở nội dung chính. <br/>
    ![Ảnh kết quả](pasteimage/2022-09-27-15-31-29.png) <br/>
    *Lưu ý: Đối tượng Card không hỗ trợ với Typescript, nên code phải để ở dạng javascript.*
+
+- Tạo bảng hiển thị dữ liệu. <br/>
+   ![Ảnh kết quả](pasteimage/2022-09-29-21-19-23.png) <br/>
+pasteimage/2022-09-29-21-19-23.png
