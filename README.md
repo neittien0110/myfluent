@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+## Nguồn tham khảo
+
+- URL: https://www.blog.duomly.com/how-to-use-fluent-ui-building-a-fintech-dashboard-tutorial/
+- Video: https://www.youtube.com/watch?v=P9s6dsdu_9c
+- Cảm ơn tác giả Anna Danilec / Many thank to [Anna Danilec](https://www.blog.duomly.com/authors/anna-danilec)
+
 ## Thực hiện
 
 - Tạo dự án react thuần
