@@ -4,7 +4,7 @@
  * @example pasteimage/2022-09-25-23-10-12.png
  */
 import React from "react";
-import  {initializeIcons} from '@fluentui/react'
+import  {initializeIcons} from '@fluentui/react'  /** Hướng dẫn https://developer.microsoft.com/en-us/fluentui#/styles/web/icons */
 import { Nav, INavStyles, INavLinkGroup } from '@fluentui/react/lib/Nav';
 
 /** Danh sách các item ở menu phải */
@@ -16,7 +16,7 @@ const menuItems : INavLinkGroup[] = [
             url:'/',
             key:'key1',
             iconProps:{
-                iconName:'News',
+                iconName:'News',         // tra cứu icon ở đây: https://developer.microsoft.com/en-us/fluentui#/styles/web/icons
                 styles:{
                     root: {
                         fontSize:20,
@@ -30,7 +30,7 @@ const menuItems : INavLinkGroup[] = [
             url:'https://mycel.app',
             key:'key2',
             iconProps:{
-                iconName:'SwitcherStartEnd',
+                iconName:'SwitcherStartEnd',   // tra cứu icon ở đây: https://developer.microsoft.com/en-us/fluentui#/styles/web/icons
                 styles:{
                     root: {
                         fontSize:20,
@@ -61,7 +61,8 @@ const navigationStyles : Partial<INavStyles> = {
  * @returns 
  */
 const Navigation = () => {
-    initializeIcons();
+    // Luôn phải khởi tạo thư viện icon trước khi dùng. Xem https://developer.microsoft.com/en-us/fluentui#/styles/web/icons
+    initializeIcons();  
     return (
         // Cú pháp tuân theo hướng dẫn https://developer.microsoft.com/en-us/fluentui#/controls/web/nav
        <Nav 
